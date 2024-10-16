@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+            thead {color: green;}
+            tbody {color: blue;}
+            tfoot {color: red;}
+
+            table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            }
+            table{
+                width: 50%;
+                height: 500px;
+                margin: 0px auto;
+            }
+            hr{
+                width: 8%;
+                margin-bottom:20px ;
+            }
+    </style>
+</head>
+<body>
+     <h1 style="text-align: center;">Table</h1>
+     <table>
+      
+        <hr>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th colspan="2">Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>col 1</td>
+                <td>col 2</td>
+                <td colspan="2">col 3</td>
+            </tr>
+            <tr>
+                <td>col 1</td>
+                <td>col 2</td>
+                <td>col 3</td>
+                <td>col 4</td>
+            </tr>
+            <tr>
+                <td>col 1</td>
+                <td colspan="2">col 2</td>
+                <td >col 3</td>
+            </tr>
+            <tr>
+                <td colspan="2">col 1</td>
+                <td >col 2</td>
+                <td >col 3</td>
+            </tr>
+            <tr>
+                <td colspan="2">col 1</td>
+                <td >col 2</td>
+                <td >col 3</td>
+            </tr>
+        </tbody>
+     </table>
+</body>
+</html>
