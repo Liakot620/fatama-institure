@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+/* header css */
+header{
+    background-color: rgb(226, 172, 101);
+    height: 300px;
+}
+.banner-item{
+    margin-top: 80px;
+}
+/* main css */
+.main-section{
+    background-color: aquamarine;
+    height: 350px;
+}
+/* section css */
+section{
+    background-color: rgb(189, 139, 64);
+    height: 100px;
+}
+/* footer css */
+footer{
+    background-color: yellow;
+    height: 60px;
+}

@@ -1,0 +1,73 @@
+html,body{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.btn{
+    padding:10px 20px;
+    font-size: 16px;
+    background-color: rgb(118, 158, 194);
+    border:0px;
+    border-radius: 8px;
+    outline: 0px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+
+}
+
+.btn::after{
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    background-color: rgb(159, 169, 137);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 8px;
+}
+
+.btn::before{
+    content: "";
+    background:linear-gradient(45deg,#ff0000,#ff7300,#fffB00,#48FF00,#00ffD5,#ff00CB,#ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100%);
+    height: calc(100%);
+    filter: blur(6px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 8px;
+    opacity: 1;
+} 
+
+@keyframes glowing{
+ 0%{
+    background-position: 0 0;
+ }
+ 50%{
+    background-position: 400% 0;
+ }
+ 100%{
+    background-position: 0 0;
+ }
+}
+/* hover */
+.btn::before{
+     opacity: 1;
+}
+.btn:active:after{
+    background:transparent;
+}
+
+.btn:active{
+    color: #000;
+    font-weight: bold;
+}
+
