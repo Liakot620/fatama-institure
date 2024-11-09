@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calulator Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <h1i id="demo"></h1i>
+        <div class="main-layout">
+            <div class="res-layout">
+                <h1>Calulator</h1>
+                <!-- form-input -->
+                <form action="" method="">
+                    <div class="form-input">
+                          <div class="column-one">
+                                 <div class="row">
+                                    <div class="col-25">
+                                        <label for="fnumber">First Number:</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input  type="text" id="fnumber" name="fnumber" placeholder="Enter First Number">
+                                    </div>
+                                </div>
+                        
+                               <div class="row">
+                                    <div class="col-25">
+                                        <label for="lnumber">Second Number:</f</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input  type="text" id="lnumber" name="lnumber" placeholder="Enter Second Number">
+                                    </div>
+                                </div>                                  
+                           </div>
+
+                         <div class="column-two">                   
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="result">Result:</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input  type="text" id="result" value="" name="result" placeholder="Result">
+                                    </div>
+                                 </div>                      
+                                        <button class="cancel"  onclick="sum()" type="button">Sum</button>
+                                        <button class="submit" onclick="subtract()" type="button">Subtract</button>  <br>
+                                        
+                                        <button class="cancel" onclick="multiplication()" type="button">Multipication</button>
+                                        <button class="submit" onclick="division()" type="button">Division</button>  
+                          </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="calculator.js"></script>
+    </body>
+</html>
