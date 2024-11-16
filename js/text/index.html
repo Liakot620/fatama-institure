@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <input type="text" id="v1" value="">
+    <input type="text" id="v2" value="">
+    <butto id="button" onclick="myFunction()" type="button">result</butto>
+
+
+    <script>
+        function myFunction() {
+            const price = document.querySelector("#v1").value;
+            const items = document.querySelector("#v2").value;
+            return (price + items);
+        }
+        document.getElementById("demo").innerHTML = myFunction();
+
+    
+    </script>
+</body>
+</html>
