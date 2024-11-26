@@ -50,7 +50,7 @@
     <div class="login-container">
         <h2>Login</h2>
         <form action="login_Backend.php" method="POST">
-            <input type="email" name="username" placeholder="Enter your email" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
             <input type="password" name="password" placeholder="Enter your password" required>
             <button type="submit">Login</button>
             <a href="registration.php">Register</a>
